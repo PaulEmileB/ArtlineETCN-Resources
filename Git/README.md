@@ -1,4 +1,4 @@
-# Git : Ressources variées
+# Versionner et partager son code
 > [Dernière mise à jour par @minapecheux-artline - 11/02/2022]
 
 ## Trucs et astuces
