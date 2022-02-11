@@ -8,7 +8,7 @@ Chacun et chacune est  libre de partager ici des tutos, des sites et autres info
 
 
  - [Le métier de TD dans tout ses états](./TD/README.md)
- - Formation CQP ETCN > CQP ETCN
+ - [Formation CQP ETCN](./CQP_ETCN/README.md)
  - Coder dans les règles de l'art >scripting
  - Coder dans Maya > Maya
  - Focus Pyside > Pyside
