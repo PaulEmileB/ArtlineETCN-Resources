@@ -7,7 +7,7 @@ Bienvenue dans cet espace de partages et de resources en lien avec la formation 
 Chacun et chacune est  libre de partager ici des tutos, des sites et autres infos utiles à la connaissance et au développement du métier de TD .  Une petite requête, s'il te plait dépose les dans le bon dossier :
 
 
- - Le métier de TD dans tout ses états > TD
+ - [Le métier de TD dans tout ses états](./TD/README.md)
  - Formation CQP ETCN > CQP ETCN
  - Coder dans les règles de l'art >scripting
  - Coder dans Maya > Maya
