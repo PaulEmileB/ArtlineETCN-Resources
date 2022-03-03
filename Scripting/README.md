@@ -1,5 +1,44 @@
 # Coder dans les règles de l'art
-> [Dernière mise à jour par @minapecheux-artline - 16/02/2022]
+> [Dernière mise à jour par @minapecheux-artline - 03/03/2022]
+
+## Environnement, dépendances
+
+- En général, un projet Python a vite besoin de dépendances externes : les bibliothèques *built-in* deviennent trop limitées et on doit utiliser des packages plus puissants.
+
+  Ces packages peuvent être listés et récupérés sur le Python Package Index, ou [PyPI](https://pypi.org/), une sorte "d'annuaire" de bibliothèques Python.
+
+  Pour [installer une dépendance dans son projet](https://docs.python.org/fr/3/installing/index.html), on utilise `pip`, un utilitaire en ligne de commande qui est capable d'aller chercher dans cet annuaire un package, à partir de son nom.
+
+  Par exemple, pour installer le package [`numpy`](https://pypi.org/project/numpy/), très utilisé en *data science*, on peut lancer la commande :
+
+  ```
+  pip install numpy
+  ```
+
+  Cette commande ira chercher la dernière version disponible du package nommé "numpy" sur le PyPI. On peut aussi spécifier une version particulière du package si on veut fixer la dépendance :
+
+  ```
+  pip install numpy==1.22.2
+  ```
+
+- Pour bien contrôler son environnement de développement, souvent, il est pratique d'[utiliser des **environnements virtuels**](https://docs.python.org/3/tutorial/venv.html.), ou *virtual environments*, qui "isolent" les projets et permettent de séparer les dépendances de chacun, voire même la version de Python à utiliser (Python 2, Python 3.6, etc.). En gros, on définit notre configuration au niveau du projet plutôt que d'avoir une seule configuration globale où on mélange tout !
+
+  Les trois utilitaires les plus connus pour créer des environnements virtuels sont [`venv`](https://docs.python.org/3/library/venv.html#module-venv) (inclus de base avec Python), [`virtualenv`](https://python-guide-pt-br.readthedocs.io/fr/latest/dev/virtualenvs.html) et [`pipenv`](https://pypi.org/project/pipenv/).
+  
+- Et puis, il est important de connaître les dépendances de son projet ! En Python, on stocke généralement la liste des bibliothèques nécessaires à notre projet dans un fichier `requirements.txt`, qui contient la liste des libs avec éventuellement leur version exacte :
+
+  ```
+  numpy==1.9.2
+  requests==2.7.0
+  ```
+  
+  Ce fichier peut être utilisé par l'outil `pip` pour installer directement toutes les bibliothèques chez votre collègue ou votre client :
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+  Pour connaître la liste des dépendances actuellement installées, on peut faire un `pip freeze`.
 
 ## Liens utiles
 
