@@ -77,3 +77,10 @@
   Ecrire du code compatible avec les deux versions (Python 2 et Python 3) n'est pas toujours simple, cette doc vous aide à repérer les principales différences et vous donne des petites astuces pour que vos programmes soient plus "universels" ! 
 
 - [Are we Python 3 ready?](https://vfxpy.com/) : pour approfondir, un état des lieux des supports Python dans les DCCs les plus courants
+
+
+# Code-snippets
+Ce dossier dans le dossier code-snippets quelques exemples de code Python commenté pour illustrer différentes fonctionnalités du langage.
+Ce sont, pour la plupart, des fonctionnalités de niveau interrmédiaire que vous pouvez aborder après les cours de scripting:
+- generators
+- context manager
